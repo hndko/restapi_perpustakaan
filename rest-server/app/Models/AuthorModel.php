@@ -4,15 +4,15 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class BooksModel extends Model
+class AuthorModel extends Model
 {
-    protected $table            = 'books';
+    protected $table            = 'authors';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
-    protected $allowedFields    = ['title', 'category_id', 'author_id', 'description'];
+    protected $allowedFields    = ['name_author'];
 
     // Dates
-    protected $useTimestamps = TRUE;
+    protected $useTimestamps = true;
     protected $dateFormat    = 'datetime';
     protected $createdField  = 'created_at';
     protected $updatedField  = 'updated_at';
